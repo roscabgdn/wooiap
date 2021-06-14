@@ -1,0 +1,43 @@
+/* 
+Theme Name: WooIAP Theme 
+Version: 1.0 
+Description: Child theme for Woo. 
+Author: Woo
+Author URI: http://woocommerce.com 
+Template: storefront */
+
+body, button, input, select, textarea {
+	font-family: 'Rubik', sans-serif;
+}
+.site-branding .site-title a {
+	font-weight: 300;
+}
+.col-full {
+	max-width: 1420px;
+}
+
+.left-sidebar .content-area {
+	width: 80%;
+}
+.left-sidebar .widget-area {
+	width: calc(20% - 40px);
+	margin-right: 40px;
+}
+
+ul.products .button {
+	background-color: #96588A;
+	color:#FFF;
+	font-weight: 400;
+}
+ul.products .onsale {
+	position: absolute;
+	top: 10px;
+	right: 30px;
+	background: #96588A;
+	border: none;
+	color: #FFF;
+	font-weight: 500;
+}
+ ul.products li.product .woocommerce-loop-product__title {
+	font-size: 18px;
+}
