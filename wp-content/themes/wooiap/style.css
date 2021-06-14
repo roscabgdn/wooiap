@@ -23,7 +23,9 @@ body, button, input, select, textarea {
 	width: calc(20% - 40px);
 	margin-right: 40px;
 }
-
+.page-template-template-fullwidth.left-sidebar .content-area {
+	width: 100%;
+}
 ul.products .button {
 	background-color: #96588A;
 	color:#FFF;
@@ -40,4 +42,39 @@ ul.products .onsale {
 }
  ul.products li.product .woocommerce-loop-product__title {
 	font-size: 18px;
+}
+
+.filter-item input[type="checkbox"] {
+	display: none;
+}
+
+.filter-item label {
+	display: flex;
+	align-items: center;
+	margin-bottom: 5px;
+	padding-left: 30px;
+	position: relative;
+}
+	.filter-item label:before {
+		content: " ";
+		width: 20px;
+		height: 20px;
+		border: 1px solid #000;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+	}
+	.filter-item label:hover:before {
+		background:#96588A;
+		border: 1px solid #FFF;
+		outline: 1px solid #96588A;
+	}
+	.filter-item.active label:before {
+		background:#96588A;
+		border: 1px solid #FFF;
+		outline: 1px solid #96588A;
+	}
+.filter-item a {
+	line-height: 21px;
 }
